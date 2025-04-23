@@ -24,6 +24,7 @@
 }
 
 #about p {
+  width: 85vw;
   line-height: 30px;
   color: #7A7A7A;
 }
