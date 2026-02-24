@@ -5,9 +5,17 @@
   }
   
   .contact-section {
-    background: linear-gradient(to right, #000000a1 0%, #131313 100%);
+    color: white;
+    background-color: #1f2029;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+    background-size: 4%;
     font-size: 12px;
+
+    /* Thematic separators using accent color with opacity */
+    border-top: 2px solid rgba(255, 235, 167, 0.2);
+    border-bottom: 2px solid rgba(255, 235, 167, 0.2);
   }
+
   
   .contact-section, button, input {
     font-family: 'Montserrat', sans-serif;
@@ -23,12 +31,13 @@
   .container {
     flex: 0 1 700px;
     margin: auto;
-    padding: 10px;
+    /* 5px on top/bottom, 10px on left/right */
+    padding: 5px 10px; 
   }
-  
   .screen {
     position: relative;
-    background: #3e3e3e;
+    background: #1f2029;
+    border: 2px solid #ffeba7;
     border-radius: 15px;
   }
   

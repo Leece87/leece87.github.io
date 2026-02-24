@@ -3,9 +3,14 @@
 
 .section-title {
     text-align: center;
-    background: #232427;
+    background-color: #1f2029;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+    background-size: 4%;
     padding-top: 5%;
     padding-left: 30%;
+
+    /* Thematic separators using accent color with opacity */
+    border-bottom: 2px solid rgba(255, 235, 167, 0.2);
 }
 
 .section-title h2 {
@@ -21,7 +26,9 @@
   align-items: center;
   flex-wrap: wrap;
   min-height: 100vh;
-  background: #232427;
+  background-color: #1f2029;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-size: 4%;
 }
 
 .cards {
