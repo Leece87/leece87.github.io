@@ -54,6 +54,51 @@
   margin-bottom: 0;
 }
 
+.education-sub .highlight {
+  color: #ffeba7;
+  font-weight: 600;
+}
+
+.education-coursework {
+  max-width: 800px;
+  margin: 2rem auto 0;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.education-coursework summary {
+  cursor: pointer;
+  color: #ffeba7;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 235, 167, 0.2);
+  border-radius: 6px;
+  display: inline-block;
+  transition: border-color 0.3s;
+}
+
+.education-coursework summary:hover {
+  border-color: #ffeba7;
+}
+
+.education-coursework summary::-webkit-details-marker {
+  color: #ffeba7;
+}
+
+.coursework-count {
+  font-weight: 400;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.coursework-list {
+  margin-top: 1rem;
+  line-height: 1.8;
+  color: #bbb;
+  font-size: 0.88rem;
+}
+
 .education-section .section__title {
   margin-bottom: 2.5rem;
 }

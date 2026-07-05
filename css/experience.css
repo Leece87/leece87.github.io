@@ -13,98 +13,115 @@
   margin-bottom: 2.5rem;
 }
 
-.roadmap {
-  max-width: 1000px;
+.timeline {
+  max-width: 800px;
   margin: 0 auto;
+  position: relative;
+  padding-left: 2rem;
 }
 
-.roadmap-track {
-  display: flex;
-  align-items: stretch;
-  gap: 0;
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: rgba(255, 235, 167, 0.3);
+  border-radius: 1px;
 }
 
-.roadmap-card {
-  flex: 1;
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2rem;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background: #ffeba7;
+  border: 3px solid #1f2029;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 0 2px rgba(255, 235, 167, 0.3);
+}
+
+.timeline-content {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 235, 167, 0.15);
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.5rem 1.75rem;
   transition: border-color 0.3s, transform 0.3s;
 }
 
-.roadmap-card:hover {
+.timeline-content:hover {
   border-color: #ffeba7;
-  transform: translateY(-4px);
+  transform: translateX(4px);
 }
 
-.roadmap-arrow {
-  flex: 0 0 auto;
+.timeline-head {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1.5rem;
-}
-
-.roadmap-body h3 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #ffeba7;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 2px;
 }
 
-.roadmap-date {
-  font-size: 0.85rem;
-  color: #999;
-  display: block;
-  margin-bottom: 0.5rem;
+.timeline-head h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffeba7;
+  margin: 0;
 }
 
-.roadmap-body h4 {
-  font-size: 1.05rem;
+.timeline-date {
+  font-size: 0.82rem;
+  color: #999;
+  white-space: nowrap;
+}
+
+.timeline-content h4 {
+  font-size: 1rem;
   font-weight: 600;
   color: #ddd;
   margin-bottom: 2px;
 }
 
-.roadmap-location {
-  font-size: 0.85rem;
+.timeline-location {
+  font-size: 0.82rem;
   color: #888;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   font-style: italic;
 }
 
-.roadmap-body ul {
+.timeline-content ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.roadmap-body li {
+.timeline-content li {
   position: relative;
   padding-left: 1.2rem;
-  margin-bottom: 0.6rem;
-  font-size: 0.9rem;
-  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
   color: #ccc;
 }
 
-.roadmap-body li::before {
+.timeline-content li::before {
   content: "\2013";
   position: absolute;
   left: 0;
   color: #ffeba7;
-}
-
-@media (max-width: 991px) {
-  .roadmap-arrow {
-    padding: 0 1rem;
-  }
-
-  .roadmap-arrow svg {
-    width: 32px;
-    height: 32px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -112,25 +129,35 @@
     padding: 3rem 5vw;
   }
 
-  .roadmap-track {
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: -1.5rem;
+    width: 14px;
+    height: 14px;
+  }
+
+  .timeline::before {
+    left: 6px;
+  }
+
+  .timeline-head {
     flex-direction: column;
-    align-items: center;
-    gap: 0;
+    gap: 2px;
   }
 
-  .roadmap-card {
-    width: 100%;
-    max-width: 500px;
+  .timeline-head h3 {
+    font-size: 1.1rem;
   }
 
-  .roadmap-arrow {
-    padding: 0.75rem 0;
+  .timeline-content {
+    padding: 1.25rem;
   }
 
-  .roadmap-arrow svg {
-    width: 28px;
-    height: 28px;
-    transform: rotate(90deg);
+  .timeline-content li {
+    font-size: 0.84rem;
   }
 }
 
@@ -139,39 +166,30 @@
     padding: 2rem 4vw;
   }
 
-  .roadmap-card {
-    padding: 1.25rem;
+  .timeline {
+    padding-left: 1.25rem;
   }
 
-  .roadmap-body h3 {
-    font-size: 1.1rem;
+  .timeline-dot {
+    left: -1.25rem;
+    width: 12px;
+    height: 12px;
   }
 
-  .roadmap-date {
-    font-size: 0.78rem;
+  .timeline::before {
+    left: 5px;
   }
 
-  .roadmap-body h4 {
-    font-size: 0.95rem;
-  }
-
-  .roadmap-body li {
-    font-size: 0.82rem;
-  }
-}
-
-@media (max-width: 360px) {
-  .roadmap-card {
+  .timeline-content {
     padding: 1rem;
   }
 
-  .roadmap-body h3 {
+  .timeline-content h3 {
     font-size: 1rem;
   }
 
-  .roadmap-body li {
-    font-size: 0.78rem;
+  .timeline-content li {
+    font-size: 0.8rem;
     padding-left: 1rem;
-    margin-bottom: 0.4rem;
   }
 }
