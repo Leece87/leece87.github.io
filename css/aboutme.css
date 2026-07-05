@@ -1,80 +1,126 @@
-/* ------------------------------------------------------------------ */
-/* c. About Section
-/* ------------------------------------------------------------------ */
-
 #about {
   background-color: #1f2029;
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
   background-size: 4%;
-  padding: 8rem 5vw; /* Fluid vertical and horizontal padding */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+  padding: 5rem 5vw;
   font-family: 'Montserrat', sans-serif;
   color: #ececee;
-  
-  /* Thematic separators using accent color with opacity */
   border-top: 2px solid rgba(255, 235, 167, 0.2);
   border-bottom: 2px solid rgba(255, 235, 167, 0.2);
 }
 
-#about h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: clamp(2rem, 5vw, 3rem); /* Fluid font scaling */
-  color: #ffeba7;
-  margin-bottom: 20px;
+#about .section__title {
+  margin-bottom: 3rem;
 }
 
-#about p {
-  width: 100%;
-  max-width: 800px;
-  line-height: 1.7;
-  color: #ececee;
-  margin-bottom: 20px;
-  font-weight: 300;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-#about .profile-pic {
-  width: clamp(100px, 15vw, 150px);
-  height: clamp(100px, 15vw, 150px);
+.about-image {
+  flex-shrink: 0;
+}
+
+.about-image .profile-pic {
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  margin-bottom: 30px;
-  border: 3px solid #ffeba7;
   object-fit: cover;
+  border: 3px solid #ffeba7;
+  box-shadow: 0 0 25px rgba(255, 235, 167, 0.25);
+  transition: box-shadow 0.4s, transform 0.4s;
 }
 
-#about .download .button {
-  margin-top: 20px;
+.about-image .profile-pic:hover {
+  box-shadow: 0 0 40px rgba(255, 235, 167, 0.4);
+  transform: scale(1.03);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #ececee;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #ffeba7;
+  font-weight: 700;
+}
+
+.download {
+  margin-top: 1.5rem;
+}
+
+.download .button {
+  display: inline-block;
   background: transparent;
   color: #ffeba7;
   border: 2px solid #ffeba7;
-  padding: 12px 30px;
-  cursor: pointer;
-  border-radius: 5px;
-  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 6px;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  transition: all 250ms linear;
-  width: auto;
+  font-size: 0.9rem;
+  transition: all 0.3s;
 }
 
-#about .download .button:hover {
+.download .button:hover {
   background: #ffeba7;
   color: #1f2029;
 }
 
-/* Responsive adjustments for mobile */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   #about {
-    padding: 4rem 10vw;
+    padding: 3rem 5vw;
   }
-  
-  #about .download .button {
-    width: 100%; /* Full width buttons for easier touch access on mobile */
+
+  .about-content {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .about-image .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .download .button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #about {
+    padding: 2rem 4vw;
+  }
+
+  .about-image .profile-pic {
+    width: 110px;
+    height: 110px;
+  }
+
+  .about-content {
+    gap: 1.5rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
   }
 }

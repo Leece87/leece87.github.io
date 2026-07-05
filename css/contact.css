@@ -1,10 +1,4 @@
-*, *:before, *:after {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .contact-section {
+.contact-section {
     color: white;
     background-color: #1f2029;
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
@@ -25,7 +19,7 @@
   
   .background {
     display: flex;
-    min-height: 100vh;
+    padding: 5rem 5vw;
   }
   
   .container {
@@ -193,35 +187,75 @@
     margin: 0 5px;
   }
   
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 768px) {
+    .background {
+      padding: 3rem 5vw;
+    }
+
     .screen-body {
-      flex-direction: column;
+      padding: 30px 20px;
     }
-  
+
+    .screen-body-item {
+      padding: 0;
+    }
+
     .screen-body-item.left {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
-  
+
     .app-title {
-      flex-direction: row;
+      font-size: 22px;
     }
-  
-    .app-title span {
-      margin-right: 12px;
-    }
-  
+
     .app-title:after {
       display: none;
     }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .screen-body {
-      padding: 40px;
+
+    .app-form-group.message {
+      margin-top: 25px;
     }
-  
-    .screen-body-item {
-      padding: 0;
+
+    .app-form-group.buttons {
+      text-align: center;
+    }
+
+    .app-form-control {
+      font-size: 13px;
+      padding: 8px 0;
+    }
+
+    .app-form-button {
+      font-size: 13px;
+      padding: 10px 20px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .background {
+      padding: 2rem 4vw;
+    }
+
+    .screen-body {
+      flex-direction: column;
+      padding: 25px 15px;
+    }
+
+    .app-title {
+      flex-direction: row;
+      font-size: 20px;
+    }
+
+    .app-title span {
+      margin-right: 12px;
+    }
+
+    .app-contact {
+      font-size: 8px;
+    }
+
+    .app-form-control {
+      font-size: 11px;
     }
   }
   

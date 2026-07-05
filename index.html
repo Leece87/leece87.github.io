@@ -12,19 +12,24 @@
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/aboutme.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/education.css">
+    <link rel="stylesheet" href="./css/experience.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
     <label for="menu-icon"></label>
-    <nav class="nav"> 		
+    <nav class="nav">
+        <span class="nav-brand">MP Qongwani</span>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#about-me">About me</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#button">Resume/CV</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="cv.html">Resume/CV</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -41,57 +46,133 @@
         </div>
     </div>
 
-       <!-- About Section
-   ================================================== -->
    <section id="about">
+    <h2 class="section__title">About Me</h2>
 
-    <div class="row">
+    <div class="about-content">
+      <div class="about-image">
+        <img class="profile-pic" src="images/profilepic.jpg" alt="" />
+      </div>
 
-       <div class="three columns">
+      <div class="about-text">
+        <p>
+          Northwest University graduate with <span class="highlight">Distinction</span>, majoring in Computer Science and Information Systems (BSc IT, <span class="highlight">Jan 2022 &ndash; Dec 2024</span>). I'm a software developer and IT professional with hands-on experience building full-stack applications, automating CI/CD pipelines, and providing enterprise IT support.
+        </p>
+        <p>
+          Skilled in Python, JavaScript, Java, C#, SQL, and data analytics. I'm passionate about leveraging technology to drive innovation &mdash; whether through predictive pricing models that increased revenue by 23%, ETL pipelines processing 25K+ records, or OAuth integrations that boosted sign-ups by 45%.
+        </p>
+        <p>
+          Let's connect to explore how I can contribute to your organization's success!
+        </p>
 
-          <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+        <div class="download">
+          <a class="button" href="https://drive.google.com/file/d/1FqZqLpUXXSHNDxrFW94vbBnl44BsFzXV/view?usp=sharing">Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-       </div>
+   <section id="experience" class="experience-section">
+    <h2 class="section__title">Experience</h2>
 
-       <div class="nine columns main-col">
+    <div class="timeline">
 
-          <h2>About Me</h2>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>IT Systems Technician</h3>
+            <span class="timeline-date">Jan 2026 &ndash; Present</span>
+          </div>
+          <h4>Ncongwane's Funeral Services</h4>
+          <p class="timeline-location">Middelburg, Mpumalanga</p>
+          <ul>
+            <li>Serve as first-line IT support, diagnosing and resolving hardware, software, and network-related issues for office users.</li>
+            <li>Improved system performance by 30% through structured workstation upgrades and Windows OS migration.</li>
+            <li>Reduced recurring technical incidents by 25% by implementing preventative maintenance and root-cause troubleshooting processes.</li>
+            <li>Installed, configured, and deployed desktop systems, ensuring stable and secure computing environments.</li>
+            <li>Maintained system updates, backups, and security controls to protect organizational data.</li>
+            <li>Provided user guidance and technical communication to ensure minimal downtime and improved user satisfaction.</li>
+          </ul>
+        </div>
+      </div>
 
-          <p>
-             Northwest University graduate with <b>Distinction</b> , specializing in Software and Web Development, I'm passionate about leveraging technology to drive innovation. I'm particularly interested in data analytics, system development, system design 
-             and analysis, and artificial intelligence. Let's connect to 
-             explore how I can contribute to your organization's success 
-             in these areas!
-          </p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Curriculum Assistant</h3>
+            <span class="timeline-date">June 2025 &ndash; Nov 2025</span>
+          </div>
+          <h4>Department of Basic Education (DBE)</h4>
+          <p class="timeline-location">KwaMhlanga, Mpumalanga</p>
+          <ul>
+            <li>Supported 60+ Grade 7 learners, with 50%+ achieving Level 5 or higher.</li>
+            <li>Collaborated with 6 teachers to deliver curriculum and learner support.</li>
+            <li>Monitored learner progress and supported academic interventions.</li>
+            <li>Delivered school-wide IT support for hardware, software, and network issues.</li>
+          </ul>
+        </div>
+      </div>
 
-          <div class="row">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Software Developer</h3>
+            <span class="timeline-date">Jul 2024 &ndash; Nov 2024</span>
+          </div>
+          <h4>North-West University</h4>
+          <p class="timeline-location">Potchefstroom, North West</p>
+          <ul>
+            <li>Built and deployed a full-stack app for sharing educational content.</li>
+            <li>Increased sign-ups by 45% via Google OAuth with JWT-based RBAC.</li>
+            <li>Reduced deployment failures by 87% through CI/CD automation using GitHub Actions and Google Cloud Run.</li>
+          </ul>
+        </div>
+      </div>
 
-             <div class="columns contact-details">
-                <p class="address">
-                   </span><br>
-                </p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Web Developer</h3>
+            <span class="timeline-date">Jan 2024 &ndash; Jul 2024</span>
+          </div>
+          <h4>Casita Express</h4>
+          <p class="timeline-location">Remote</p>
+          <ul>
+            <li>Delivered restaurant site in a 3-person team using HTML, CSS, JavaScript, and Bootstrap.</li>
+            <li>Enhanced cross-device UX with mobile-first design and interactive sections.</li>
+          </ul>
+        </div>
+      </div>
 
-             </div>
-
-             <div class="columns download">
-                <p>
-                   <a  class="button" href="https://drive.google.com/file/d/1VCo5AY1rh-9UGYL8LCR6yFVhj9LsZQR6/view?usp=sharing" id="button"><i class="fas fa-download"></i> Download Resume</a>
-                </p>
-             </div>
-
-          </div> <!-- end row -->
-
-       </div> <!-- end .main-col -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Web Developer Intern</h3>
+            <span class="timeline-date">Feb 2024 &ndash; Feb 2024</span>
+          </div>
+          <h4>GaoTek Inc</h4>
+          <p class="timeline-location">Remote (Canada)</p>
+          <ul>
+            <li>Assisted in market research for e-commerce products, compiling actionable data.</li>
+            <li>Supported an upcoming WordPress implementation strategy with data-driven insights.</li>
+          </ul>
+        </div>
+      </div>
 
     </div>
-
- </section> <!-- About Section End-->
+  </section>
     
     <section class="section skills animate__animated animate__fadeIn animate__delay-5s" id="skills">
       <h2 class="section__title">Skills</h2>
       <ul class="skills__list">
         <li class="skills__list-item btn btn--plain">Java</li>
           <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
           <li class="skills__list-item btn btn--plain">.NET</li>
           <li class="skills__list-item btn btn--plain">Spring Boot</li>
           <li class="skills__list-item btn btn--plain">HTML</li>
@@ -109,7 +190,7 @@
       </ul>
   </section>
 
-   <div class="skills-section" id="skills">
+   <div class="skills-section" id="skills-editor">
     <div class="illustration-editor">
         <div class="code-blocks">
           <div class="code code-html">
@@ -154,53 +235,190 @@
       </div>
    </div>
 
-   <div class="section-title" id="projects">
-    <h2>My Projects</h2>
-    </div>
+   <section id="projects">
+    <h2 class="section__title">My Projects</h2>
 
    <div class="cards">
-    <div class="card">
+    <div class="card" style="--accent: #ffeba7">
       <div class="box">
         <div class="content">
-          <h2>01</h2>
-          <h3>Encryption</h3>
-          <p>This is an Encryption project that was done for the school as 
-            an assignment. It was created using python. The aim was to ecrypt and decrypt
-            any type of file. We used the GUI to make it user friendly. </p>
-          <img src="./images/GUI.PNG "alt="Project 1">
-          <a href="https://github.com/Leece-Qongwani/Enccrption.git" target="_blank">Source Code</a>
+          <span class="project-badge">Web</span>
+          <h3><i class="fas fa-globe"></i> Personal Portfolio Website</h3>
+          <div class="project-techs">
+            <span>HTML</span>
+            <span>SCSS</span>
+            <span>JavaScript</span>
+          </div>
+          <p>Achieved first-page Google ranking for personal name within <strong class="metric">3 weeks</strong>. Built with mobile-first design. Earned <strong class="metric">85/100</strong> Performance and <strong class="metric">91/100</strong> SEO scores on Lighthouse. Cut load time by <strong class="metric">72%</strong> through image optimization.</p>
+          <a href="https://leece87.github.io/" target="_blank">Live Link</a>
         </div>
       </div>
     </div>
-  
-    <div class="card">
+
+    <div class="card" style="--accent: #74b087">
       <div class="box">
         <div class="content">
-          <h2>02</h2>
-          <h3>Casita Express official website</h3>
-          <p>This project was a collaborative effort involving myself and my business partners. 
-            Together, we developed a static website using a combination of HTML, CSS, and JavaScript technologies.</p>
-          <img src="./images/casita express.png" alt="Project 3">
-          <a href="https://www.casitaexpress.com/" target="_blank" >Visit Page</a>
+          <span class="project-badge">Data Science</span>
+          <h3><i class="fas fa-database"></i> Healthcare Data ETL</h3>
+          <div class="project-techs">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>PostgreSQL</span>
+            <span>Power BI</span>
+          </div>
+          <p>Extracted and processed over <strong class="metric">5,000</strong> records of healthcare data from CDC's API. Transformed data with Pandas and loaded into PostgreSQL database with <strong class="metric">99.8%</strong> accuracy rate. Created interactive dashboards visualizing healthcare metrics in Power BI.</p>
+          <a href="https://github.com/Leece87/healthcare-data-etl" target="_blank">Source Code</a>
         </div>
       </div>
     </div>
-  
-    <div class="card">
+
+    <div class="card" style="--accent: #9f8198">
       <div class="box">
         <div class="content">
-          <h2>03</h2>
-          <h3>Tutor Booking System</h3>
-          <p>This was completed as a University project. The purpose of this System
-            is to allow new users to register as tutors and for students to book tutors. It was created
-            using C# and MySQL.</p>
-            <img src="./images/Tutor Home.png" target="_blank" alt="Project 3">
-            <a href="https://github.com/Soso-Mabulu/Project-Assignment-CMPG-223.git" target="_blank">Source Code</a>
+          <span class="project-badge">Analytics</span>
+          <h3><i class="fas fa-chart-bar"></i> Airbnb Data Analysis</h3>
+          <div class="project-techs">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>Oracle</span>
+            <span>Matplotlib</span>
+          </div>
+          <p>Engineered ETL pipeline processing <strong class="metric">25,000+</strong> Airbnb listings (120MB+ dataset) using Python and Oracle database, enabling comprehensive pricing analysis of the Cape Town accommodation market. Developed predictive pricing models that identified key market trends, increasing host revenue potential by <strong class="metric">23%</strong>.</p>
+          <a href="https://github.com/Leece87" target="_blank">Source Code</a>
         </div>
       </div>
     </div>
-  </div>
-  
+
+    <div class="card" style="--accent: #7a99ad">
+      <div class="box">
+        <div class="content">
+          <span class="project-badge">App</span>
+          <h3><i class="fas fa-graduation-cap"></i> Tutor Booking System</h3>
+          <div class="project-techs">
+            <span>C#</span>
+            <span>.NET</span>
+            <span>MySQL</span>
+          </div>
+          <p>Developed application for university students to book tutors by module. Implemented user friendly interface and relational database connection.</p>
+          <img src="./images/Tutor Home.png" target="_blank" alt="Tutor Booking System">
+          <a href="https://github.com/Soso-Mabulu/Project-Assignment-CMPG-223.git" target="_blank">Source Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="--accent: #de7300">
+      <div class="box">
+        <div class="content">
+          <span class="project-badge">App</span>
+          <h3><i class="fas fa-comments"></i> Chat Room App</h3>
+          <div class="project-techs">
+            <span>Python</span>
+            <span>Tkinter</span>
+            <span>Firebase</span>
+            <span>Firestore</span>
+          </div>
+          <p>Built a real-time chat application with private and group messaging using Firebase Firestore for secure data storage and synchronization. Developed a responsive Tkinter + CustomTkinter GUI with login/signup functionality. Implemented real-time updates using Firestore snapshot listeners and secure user authentication mechanisms.</p>
+          <a href="https://github.com/Leece87" target="_blank">Source Code</a>
+        </div>
+      </div>
+    </div>
+   </div>
+    </section>
+
+   <section id="education" class="education-section">
+    <h2 class="section__title">Education</h2>
+
+    <div class="education-degree">
+      <h3>Bachelor of Science in Information Technology</h3>
+      <p class="education-sub">Northwest University &mdash; <span class="highlight">Jan 2022 &ndash; Dec 2024</span></p>
+      <p class="education-sub">Graduated with <span class="highlight">Distinction</span> &mdash; Major in Computer Science and Information Systems</p>
+
+      <p class="education-average">Final Year Average: <span>80.39%</span></p>
+
+      <h4>Final Year Modules &mdash; 2024</h4>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Module</th>
+              <th>Credits</th>
+              <th>Mark</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CMPG311</td>
+              <td>Databases</td>
+              <td>16</td>
+              <td>84</td>
+              <td><span class="result-dist">Distinction</span></td>
+            </tr>
+            <tr>
+              <td>CMPG312</td>
+              <td>Decision Support Systems 1</td>
+              <td>16</td>
+              <td>86</td>
+              <td><span class="result-dist">Distinction</span></td>
+            </tr>
+            <tr>
+              <td>CMPG313</td>
+              <td>Artificial Intelligence</td>
+              <td>16</td>
+              <td>72</td>
+              <td><span class="result-pass">Passed</span></td>
+            </tr>
+            <tr>
+              <td>CMPG315</td>
+              <td>Computer Networks</td>
+              <td>16</td>
+              <td>71</td>
+              <td><span class="result-pass">Passed</span></td>
+            </tr>
+            <tr>
+              <td>CMPG321</td>
+              <td>Advanced Databases</td>
+              <td>16</td>
+              <td>81</td>
+              <td><span class="result-dist">Distinction</span></td>
+            </tr>
+            <tr>
+              <td>CMPG322</td>
+              <td>Decision Support Systems 2</td>
+              <td>16</td>
+              <td>84</td>
+              <td><span class="result-dist">Distinction</span></td>
+            </tr>
+            <tr>
+              <td>CMPG323</td>
+              <td>IT Developments</td>
+              <td>16</td>
+              <td>87</td>
+              <td><span class="result-dist">Distinction</span></td>
+            </tr>
+            <tr>
+              <td>CMPG324</td>
+              <td>Operating Systems</td>
+              <td>16</td>
+              <td>78</td>
+              <td><span class="result-dist">Distinction</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <details class="education-coursework">
+        <summary>View all coursework <span class="coursework-count">(27 courses)</span></summary>
+        <p class="coursework-list">Financial Accountancy (Special), Financial Accounting (Special), Academic Literacy Development &mdash; Eng, Introduction to Business Management, Introduction to Computing and Programming, Structured Programming, User Interface Programming, Basic Mathematical Techniques, Descriptive Statistics, Intro Stat Inference, Problem Solving for Managers, Object Oriented Programming, Apps and Advanced User Interface Programming, System Analysis and Design, Communication Skills, Information Security, Data Structures and Algorithms, Data Analytics, Discrete Mathematics, Understanding the Natural World, Databases, Decision Support Systems, Artificial Intelligence, Computer Networks, Advanced Databases, IT Developments, Operating Systems</p>
+      </details>
+    </div>
+
+    <div class="education-metric">
+      <h3>National Senior Certificate (Matric)</h3>
+      <p class="education-sub">Bongumusa FET School &mdash; KwaMhlanga, MP</p>
+    </div>
+  </section>
 
    <div id="contact" class="contact-section" >
     <div class="background">
@@ -235,7 +453,7 @@
                     <input class="app-form-control" placeholder="EMAIL" name="contactName" required>
                   </div>
                   <div class="app-form-group">
-                    <input class="app-form-control" placeholder="CONTACT NO" name="contactEmail" required>
+                    <input class="app-form-control" placeholder="CONTACT NO" name="contactPhone" required>
                   </div>
                   <div class="app-form-group message">
                     <input class="app-form-control" placeholder="MESSAGE" name="contactMessage" required>
@@ -255,46 +473,42 @@
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-left">
-            <h3>About <span>MP Qongwani</span></h3>
+            <h3>Navigation</h3>
             <p class="footer-links">
                 <a href="index.html">Home</a>
-                ·
                 <a href="#about">About</a>
-                ·
-                <a href="#projects">Projects</a>
-                ·
+                <a href="#experience">Experience</a>
                 <a href="#skills">Skills</a>
-                ·
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
                 <a href="#contact">Contact</a>
             </p>
-            <p class="footer-company-name">MP Qongwani &copy; 2024</p>
         </div>
 
         <div class="footer-center">
-            <div>
+            <div class="footer-contact-item">
                 <i class="fa fa-map-marker"></i>
-                <p>59 Steve Biko Street Potchefstroom</p>
+                <p>59 Steve Biko Street, Potchefstroom</p>
             </div>
-            <div>
+            <div class="footer-contact-item">
                 <i class="fa fa-phone"></i>
                 <p>+27 76 072 2175</p>
             </div>
-            <div>
+            <div class="footer-contact-item">
                 <i class="fa fa-envelope"></i>
                 <p><a href="mailto:mxolisiprince87@gmail.com">mxolisiprince87@gmail.com</a></p>
             </div>
         </div>
 
         <div class="footer-right">
-            <p class="footer-company-about">
-                MP Qongwani is a graduate specializing in Software and Web Development, passionate about leveraging technology to drive innovation.
-            </p>
+            <h3>Connect</h3>
             <div class="footer-icons">
-                <a href="https://www.facebook.com/full.margin.18" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/leecza_87" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/mxolisi-prince-qongwani/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://wa.me/+27760722175" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/full.margin.18" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/leecza_87" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/mxolisi-prince-qongwani/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/+27760722175" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             </div>
+            <p class="footer-company-name">MP Qongwani &copy; 2026</p>
         </div>
     </div>
 </footer>
