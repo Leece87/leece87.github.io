@@ -26,6 +26,19 @@
   margin-bottom: 4px;
 }
 
+.education-average {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #bbbbbb;
+  margin-top: 1.5rem;
+}
+
+.education-average span {
+  color: #ffeba7;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 .education-section h4 {
   font-size: 1.05rem;
   font-weight: 600;
