@@ -1,0 +1,129 @@
+.education-section {
+  background-color: #1f2029;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-size: 4%;
+  color: #ececee;
+  padding: 5rem 5vw;
+  font-family: 'Montserrat', sans-serif;
+  border-top: 2px solid rgba(255, 235, 167, 0.2);
+  border-bottom: 2px solid rgba(255, 235, 167, 0.2);
+}
+
+.education-degree,
+.education-metric {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.education-metric {
+  margin-bottom: 0;
+}
+
+.education-section h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffeba7;
+  margin-bottom: 4px;
+}
+
+.education-section h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffeba7;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.education-sub {
+  color: #bbbbbb;
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.education-section .section__title {
+  margin-bottom: 2.5rem;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+.education-section table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  min-width: 520px;
+}
+
+.education-section thead {
+  background: #2a2f4c;
+}
+
+.education-section th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 700;
+  color: #ffeba7;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.education-section td {
+  padding: 11px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.education-section tbody tr:hover {
+  background: rgba(255, 235, 167, 0.04);
+}
+
+.result-dist {
+  color: #ffeba7;
+  font-weight: 600;
+}
+
+.result-pass {
+  color: #74b087;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .education-section {
+    padding: 3rem 5vw;
+  }
+
+  .education-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .education-section th,
+  .education-section td {
+    padding: 10px 12px;
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-section {
+    padding: 2rem 4vw;
+  }
+
+  .education-section h3 {
+    font-size: 1rem;
+  }
+
+  .education-section th,
+  .education-section td {
+    padding: 8px 10px;
+    font-size: 0.78rem;
+  }
+
+  .education-section table {
+    min-width: 440px;
+  }
+}
