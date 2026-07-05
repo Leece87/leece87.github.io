@@ -6,7 +6,7 @@
   background-color: #1f2029;
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
   background-size: 4%;
-  padding: 8rem 5vw; /* Fluid vertical and horizontal padding */
+  padding: 5rem 5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,9 +69,9 @@
 }
 
 /* Responsive adjustments for mobile */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   #about {
-    padding: 4rem 10vw;
+    padding: 3rem 5vw;
   }
   
   #about .download .button {

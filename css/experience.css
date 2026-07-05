@@ -6,6 +6,7 @@
   padding: 5rem 5vw;
   font-family: 'Montserrat', sans-serif;
   border-top: 2px solid rgba(255, 235, 167, 0.2);
+  border-bottom: 2px solid rgba(255, 235, 167, 0.2);
 }
 
 .experience-section .section__title {
@@ -106,9 +107,9 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .experience-section {
-    padding: 3rem 4vw;
+    padding: 3rem 5vw;
   }
 
   .roadmap-track {
