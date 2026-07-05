@@ -338,6 +338,11 @@ h1 {
   .nav {
     right: 30px;
   }
+  .nav-brand {
+    top: 26px;
+    left: 30px;
+    font-size: 1.1rem;
+  }
   h1 {
     font-size: 9vw;
     -webkit-text-stroke: 2px transparent;
@@ -431,6 +436,12 @@ h1 {
     right: 15px;
   }
 
+  .nav-brand {
+    top: 22px;
+    left: 20px;
+    font-size: 1rem;
+  }
+
   .nav ul li a {
     font-size: 4vw;
   }
@@ -479,6 +490,12 @@ h1 {
     height: 50px;
   }
 
+  .nav-brand {
+    top: 16px;
+    left: 14px;
+    font-size: 0.85rem;
+  }
+
   .menu-icon:checked ~ .nav {
     width: 200%;
     height: 200%;
@@ -498,7 +515,25 @@ h1 {
 }
 
 .nav-brand {
-  display: none;
+  position: fixed;
+  top: 22px;
+  left: 25px;
+  z-index: 10;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #ffeba7;
+  -webkit-text-stroke: 1px #ffeba7;
+  -webkit-text-fill-color: transparent;
+  pointer-events: none;
+}
+
+.nav {
+  background-color: #1f2029;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-size: 4%;
 }
 
 @media (min-width: 992px) {
@@ -512,14 +547,11 @@ h1 {
   }
 
   .nav-brand {
-    display: block;
-    font-family: 'Montserrat', sans-serif;
+    position: static;
     font-size: 1.1rem;
-    font-weight: 800;
-    color: #ffeba7;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    flex-shrink: 0;
+    -webkit-text-stroke: 1px #ffeba7;
+    -webkit-text-fill-color: transparent;
+    pointer-events: auto;
   }
 
   .nav {
@@ -534,6 +566,8 @@ h1 {
     height: auto;
     padding: 0 40px;
     background: #1f2029;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+    background-size: 4%;
     border-bottom: 2px solid rgba(255, 235, 167, 0.2);
     border-radius: 0;
     animation: none;
