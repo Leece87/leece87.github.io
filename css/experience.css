@@ -1,0 +1,176 @@
+.experience-section {
+  background-color: #1f2029;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-size: 4%;
+  color: #ececee;
+  padding: 5rem 5vw;
+  font-family: 'Montserrat', sans-serif;
+  border-top: 2px solid rgba(255, 235, 167, 0.2);
+}
+
+.experience-section .section__title {
+  margin-bottom: 2.5rem;
+}
+
+.roadmap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.roadmap-track {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+.roadmap-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 235, 167, 0.15);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.roadmap-card:hover {
+  border-color: #ffeba7;
+  transform: translateY(-4px);
+}
+
+.roadmap-arrow {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.roadmap-body h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffeba7;
+  margin-bottom: 2px;
+}
+
+.roadmap-date {
+  font-size: 0.85rem;
+  color: #999;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.roadmap-body h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 2px;
+}
+
+.roadmap-location {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 1.25rem;
+  font-style: italic;
+}
+
+.roadmap-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.roadmap-body li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.roadmap-body li::before {
+  content: "\2013";
+  position: absolute;
+  left: 0;
+  color: #ffeba7;
+}
+
+@media (max-width: 991px) {
+  .roadmap-arrow {
+    padding: 0 1rem;
+  }
+
+  .roadmap-arrow svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .experience-section {
+    padding: 3rem 4vw;
+  }
+
+  .roadmap-track {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .roadmap-card {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .roadmap-arrow {
+    padding: 0.75rem 0;
+  }
+
+  .roadmap-arrow svg {
+    width: 28px;
+    height: 28px;
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-section {
+    padding: 2rem 4vw;
+  }
+
+  .roadmap-card {
+    padding: 1.25rem;
+  }
+
+  .roadmap-body h3 {
+    font-size: 1.1rem;
+  }
+
+  .roadmap-date {
+    font-size: 0.78rem;
+  }
+
+  .roadmap-body h4 {
+    font-size: 0.95rem;
+  }
+
+  .roadmap-body li {
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .roadmap-card {
+    padding: 1rem;
+  }
+
+  .roadmap-body h3 {
+    font-size: 1rem;
+  }
+
+  .roadmap-body li {
+    font-size: 0.78rem;
+    padding-left: 1rem;
+    margin-bottom: 0.4rem;
+  }
+}
