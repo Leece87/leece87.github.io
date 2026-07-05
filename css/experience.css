@@ -53,6 +53,36 @@
   box-shadow: 0 0 0 2px rgba(255, 235, 167, 0.3);
 }
 
+.timeline-item--current .timeline-dot {
+  background: #74b087;
+  box-shadow: 0 0 0 2px rgba(116, 176, 135, 0.3);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    box-shadow: 0 0 0 2px rgba(116, 176, 135, 0.3), 0 0 0 0 rgba(116, 176, 135, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 2px rgba(116, 176, 135, 0.3), 0 0 0 12px rgba(116, 176, 135, 0);
+  }
+}
+
+.live-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #74b087;
+  font-weight: 600;
+  animation: blink 1.5s ease-in-out infinite;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
 .timeline-content {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 235, 167, 0.15);
