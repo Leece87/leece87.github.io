@@ -540,6 +540,17 @@ h1 {
   }
 }
 
+.section__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #ffeba7;
+  -webkit-text-stroke: 1px #ffeba7;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .nav-brand {
   position: fixed;
   top: 22px;
