@@ -261,3 +261,108 @@ html, .skills-section {
     from, 45% { border-color: transparent }
     50%, to { border-color: white }
   }
+
+  @media (max-width: 768px) {
+    .illustration-editor {
+      margin-right: 0;
+    }
+
+    .code-html {
+      left: -50px;
+      top: 20px;
+    }
+
+    .code-css {
+      left: 0;
+      top: 100px;
+      height: 150px;
+    }
+
+    .code-js {
+      left: -80px;
+      top: 230px;
+    }
+
+    .editor-block {
+      width: 300px;
+      height: 250px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .code {
+      width: 200px;
+      height: 100px;
+    }
+
+    .code header h1 {
+      font-size: 11px;
+    }
+
+    .code-html {
+      left: -30px;
+      top: 15px;
+    }
+
+    .code-css {
+      left: 0;
+      top: 75px;
+      height: 120px;
+    }
+
+    .code-js {
+      left: -50px;
+      top: 165px;
+    }
+
+    .editor-block {
+      width: 210px;
+      height: 180px;
+    }
+
+    .code-css .code-content code .line-2 {
+      margin-left: 1rem;
+    }
+
+    .code-css .code-content code .line-3,
+    .code-css .code-content code .line-4,
+    .code-css .code-content code .line-5 {
+      margin-left: 2rem;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .skills-section {
+      overflow: hidden;
+    }
+
+    .code {
+      width: 160px;
+      height: 85px;
+    }
+
+    .code header h1 {
+      font-size: 10px;
+    }
+
+    .code-html {
+      left: -20px;
+      top: 10px;
+    }
+
+    .code-css {
+      left: 0;
+      top: 60px;
+      height: 100px;
+    }
+
+    .code-js {
+      left: -35px;
+      top: 130px;
+    }
+
+    .editor-block {
+      width: 170px;
+      height: 145px;
+    }
+  }

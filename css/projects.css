@@ -6,8 +6,7 @@
     background-color: #1f2029;
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
     background-size: 4%;
-    padding-top: 5%;
-    padding-left: 30%;
+    padding: 5% 5% 2%;
 
     /* Thematic separators using accent color with opacity */
     border-bottom: 2px solid rgba(255, 235, 167, 0.2);
@@ -141,5 +140,66 @@
 
 .cards .card .box .content img {
   width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    padding: 20px 10px;
+  }
+
+  .cards .card {
+    min-width: 280px;
+    height: auto;
+    margin: 20px 15px;
+  }
+
+  .cards .card .box {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .cards .card .box:hover {
+    transform: translateY(-20px);
+  }
+
+  .cards .card .box .content h2 {
+    font-size: 6rem;
+  }
+
+  .cards .card .box .content h3 {
+    font-size: 1.2rem;
+  }
+
+  .cards .card .box .content p {
+    font-size: 0.9rem;
+  }
+
+  .cards .card .box .content img {
+    max-height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards .card {
+    min-width: 0;
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .cards .card .box {
+    padding: 10px;
+  }
+
+  .cards .card .box .content h2 {
+    font-size: 4rem;
+    top: -5px;
+    right: 15px;
+  }
 }

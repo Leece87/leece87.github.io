@@ -193,17 +193,46 @@
     margin: 0 5px;
   }
   
+  @media screen and (max-width: 768px) {
+    .background {
+      min-height: auto;
+      padding: 40px 0;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 30px 20px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+
+    .app-form-control {
+      font-size: 13px;
+      padding: 8px 0;
+    }
+
+    .app-form-button {
+      font-size: 13px;
+      padding: 10px 20px;
+    }
+  }
+  
   @media screen and (max-width: 520px) {
     .screen-body {
       flex-direction: column;
+      padding: 25px 15px;
     }
   
     .screen-body-item.left {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   
     .app-title {
       flex-direction: row;
+      font-size: 22px;
     }
   
     .app-title span {
@@ -213,15 +242,27 @@
     .app-title:after {
       display: none;
     }
+
+    .app-form-group.message {
+      margin-top: 25px;
+    }
+
+    .app-form-group.buttons {
+      text-align: center;
+    }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 400px) {
     .screen-body {
-      padding: 40px;
+      padding: 20px 10px;
     }
-  
-    .screen-body-item {
-      padding: 0;
+
+    .app-contact {
+      font-size: 7px;
+    }
+
+    .app-form-control {
+      font-size: 11px;
     }
   }
   
