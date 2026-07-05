@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 
-
 .section-title {
     text-align: center;
     background-color: #1f2029;
@@ -9,6 +8,7 @@
     padding: 5% 5% 2%;
 
     /* Thematic separators using accent color with opacity */
+    border-top: 2px solid rgba(255, 235, 167, 0.2);
     border-bottom: 2px solid rgba(255, 235, 167, 0.2);
 }
 
