@@ -68,20 +68,7 @@
   }
 }
 
-.live-badge {
-  display: inline-block;
-  font-size: 0.75rem;
-  color: #74b087;
-  font-weight: 600;
-  animation: blink 1.5s ease-in-out infinite;
-  margin-left: 4px;
-  vertical-align: middle;
-}
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
-}
 
 .timeline-content {
   background: rgba(255, 255, 255, 0.03);
