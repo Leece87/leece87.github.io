@@ -16,14 +16,16 @@
         const toggle = document.getElementById('theme-toggle');
         const body = document.body;
     
-        toggle.addEventListener('change', () => {
-            body.classList.toggle('dark-mode');
-        });
+        if (toggle) {
+            toggle.addEventListener('change', () => {
+                body.classList.toggle('dark-mode');
+            });
     
-        // Check for saved theme preference
-        if (localStorage.getItem('theme') === 'dark') {
-            body.classList.add('dark-mode');
-            toggle.checked = true;
+            // Check for saved theme preference
+            if (localStorage.getItem('theme') === 'dark') {
+                body.classList.add('dark-mode');
+                toggle.checked = true;
+            }
         }
     
         body.addEventListener('classChange', () => {
