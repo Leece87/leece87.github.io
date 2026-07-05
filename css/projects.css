@@ -149,6 +149,7 @@
 @media (max-width: 768px) {
   .cards {
     padding: 20px 10px;
+    min-height: 0;
   }
 
   .cards .card {

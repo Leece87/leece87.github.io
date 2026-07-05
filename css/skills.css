@@ -136,8 +136,9 @@ html, .skills-section {
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
     border-radius: 6px;
     z-index: 5;
+    overflow: hidden;
   }
-  
+
   .code header {
     display: grid;
     grid-template-columns: 36px auto 36px;
@@ -176,6 +177,7 @@ html, .skills-section {
   .code .code-content {
     margin: 0 10px 10px;
     color: white;
+    overflow: hidden;
   }
   
   .code .code-content .c-r { color: #A88038 }
@@ -285,7 +287,7 @@ html, .skills-section {
 
     .editor-block {
       width: 300px;
-      height: 250px;
+      height: 380px;
     }
   }
 
@@ -293,6 +295,10 @@ html, .skills-section {
     .code {
       width: 200px;
       height: 100px;
+    }
+
+    .code .code-content {
+      font-size: 10px;
     }
 
     .code header h1 {
@@ -317,28 +323,28 @@ html, .skills-section {
 
     .editor-block {
       width: 210px;
-      height: 180px;
+      height: 270px;
     }
 
     .code-css .code-content code .line-2 {
-      margin-left: 1rem;
+      margin-left: 0.5rem;
     }
 
     .code-css .code-content code .line-3,
     .code-css .code-content code .line-4,
     .code-css .code-content code .line-5 {
-      margin-left: 2rem;
+      margin-left: 1rem;
     }
   }
 
   @media (max-width: 360px) {
-    .skills-section {
-      overflow: hidden;
-    }
-
     .code {
       width: 160px;
       height: 85px;
+    }
+
+    .code .code-content {
+      font-size: 9px;
     }
 
     .code header h1 {
@@ -363,6 +369,16 @@ html, .skills-section {
 
     .editor-block {
       width: 170px;
-      height: 145px;
+      height: 220px;
+    }
+
+    .code-css .code-content code .line-2 {
+      margin-left: 0.25rem;
+    }
+
+    .code-css .code-content code .line-3,
+    .code-css .code-content code .line-4,
+    .code-css .code-content code .line-5 {
+      margin-left: 0.5rem;
     }
   }
